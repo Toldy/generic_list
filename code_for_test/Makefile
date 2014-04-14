@@ -5,7 +5,7 @@
 ## Login   <colin_g@epitech.eu>
 ## 
 ## Started on  ven. mars 07 18:51:29 2014 julien colin
-## Last update lun. avril 14 05:27:16 2014 julien colin
+## Last update lun. avril 14 05:45:43 2014 julien colin
 ##
 
 ifdef DEB
@@ -15,7 +15,7 @@ else
 	CC = gcc
 endif
 
-CFLAGS	+= -Wextra -Wall -Werror
+CFLAGS	+= -Wextra -Wall -Wno-pointer-to-int-cast -Werror
 CFLAGS	+= -I./includes -I../my_list/
 
 LDFLAGS	+= -Wl,-rpath,../lib/ -L../lib/ -lmy_list

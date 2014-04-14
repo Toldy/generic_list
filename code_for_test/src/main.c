@@ -5,7 +5,7 @@
 ** Login  <colin_g@epitech.eu>
 **
 ** Started on  lun. avril 14 04:59:52 2014 julien colin
-** Last update lun. avril 14 05:35:01 2014 julien colin
+** Last update lun. avril 14 05:44:28 2014 julien colin
 */
 
 #include <stdio.h>
@@ -33,7 +33,7 @@ int	main(int ac, char **av)
     node_int = list_int.front;
     while (node_string && node_int)
     {
-        printf("%d %s\n", (int)node_int->data, node_string->data);
+        printf("%d %s\n", (int)node_int->data, (char*)node_string->data);
         node_string = node_string->next;
         node_int = node_int->next;
     }
