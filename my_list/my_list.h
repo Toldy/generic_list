@@ -5,7 +5,7 @@
 ** Login  <colin_g@epitech.eu>
 **
 ** Started on  lun. avril 14 04:56:28 2014 julien colin
-** Last update lun. avril 14 05:22:47 2014 julien colin
+** Last update lun. avril 14 06:00:29 2014 julien colin
 */
 
 #ifndef MY_LIST_H_
@@ -32,5 +32,7 @@ void	list_init(t_list *list);
 void		push_front(t_list *list, void *data);
 
 t_node*		__new_node(void *data);
+
+void        list_destroy(t_list *list);
 
 #endif /* !MY_LIST_H_ */

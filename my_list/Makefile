@@ -5,7 +5,7 @@
 ## Login   <colin_g@epitech.eu>
 ## 
 ## Started on  dim. avril 06 03:34:43 2014 julien colin
-## Last update lun. avril 14 05:21:49 2014 julien colin
+## Last update lun. avril 14 06:01:56 2014 julien colin
 ##
 
 ifdef DEB
@@ -21,11 +21,12 @@ CFLAGS	+= -Wextra -Wall -Werror
 CFLAGS	+= -fPIC
 CFLAGS	+= -I./
 
-NAME	= libmy_list
+NAME	= libmy_list.so
 
 SRCS	= list_create.c \
 		  list_push.c \
-		  list_node.c
+		  list_node.c \
+		  list_destroy.c
 
 OBJS	= $(SRCS:.c=.o)
 
