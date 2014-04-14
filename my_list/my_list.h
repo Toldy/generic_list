@@ -5,7 +5,7 @@
 ** Login  <colin_g@epitech.eu>
 **
 ** Started on  lun. avril 14 04:56:28 2014 julien colin
-** Last update lun. avril 14 06:00:29 2014 julien colin
+** Last update lun. avril 14 06:33:24 2014 julien colin
 */
 
 #ifndef MY_LIST_H_
@@ -30,6 +30,8 @@ typedef struct		s_list
 void	list_init(t_list *list);
 
 void		push_front(t_list *list, void *data);
+void		push_back(t_list *list, void *data);
+void		insert(t_list *list, void *data, unsigned int pos);
 
 t_node*		__new_node(void *data);
 
